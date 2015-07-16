@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
-  resources :articles
-
+  get 'iteration_schedules/index'
+  get 'developers/index'
+  get 'projects/index'
   get 'welcome/index'
 
-  get 'welcome/index'
+  resources :articles, :projects, :developers, :iteration_schedules
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

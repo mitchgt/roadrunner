@@ -1,0 +1,15 @@
+<h1>Tracker Projects</h1>
+
+<table class="table">
+  <tr>
+    <th>Name</th>
+  </tr>
+
+  <% @projects.each do |project| %>
+    <tr>
+      <td><%= link_to project.name, project_path(project) %></td>
+    </tr>
+
+  <% end %>
+
+</table>

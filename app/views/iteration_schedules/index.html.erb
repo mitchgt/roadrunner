@@ -1,0 +1,14 @@
+<h1>Iteration Schedules</h1>
+
+<table class="table">
+  <tr>
+    <th>Name</th>
+  </tr>
+
+  <% @iteration_schedules.each do |iteration_schedule| %>
+    <tr>
+      <td><%= link_to iteration_schedule.team, iteration_schedule_path(iteration_schedule) %></td>
+    </tr>
+  <% end %>
+
+</table>

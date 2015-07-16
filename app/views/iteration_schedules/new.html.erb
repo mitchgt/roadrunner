@@ -1,0 +1,32 @@
+<h1>Create Iteration Schedule</h1>
+
+<%= form_for :iteration_schedule, html: {class: 'form-horizontal'}, url: iteration_schedules_path do |f| %>
+
+  <% if @iteration_schedule.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@iteration_review.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @iteration_review.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group">
+    <%= f.label :team, class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= f.text_field :team, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="actions form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= f.submit %>
+    </div>
+  </div>
+
+<% end %>
