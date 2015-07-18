@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: 
+  tracker_id: 
+  start_date: 
+  description: 
+  current_velocity: 
+  membership_ids: 
+
+two:
+  name: 
+  tracker_id: 
+  start_date: 
+  description: 
+  current_velocity: 
+  membership_ids: 
